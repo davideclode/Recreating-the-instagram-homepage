@@ -27,17 +27,57 @@ body {
     /* margin-right: 1000px; */
     /* box-sizing: content-box; */
 }
+
+.instagram-phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
  .instagram-phone img {
      height: 50rem;
-     /* margin-top: 0; */
-    /* display:flex; */
-    /* margin: 0; */
-    /* margin-left: 50%; */
 }
  
 .instagram-continue {
-    /* margin-top: 0; */
-    /* display:flex; */
-    /* margin: 0; */
-    /* margin-right: 50%; */
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 50%; /*Isto porto a coluna da esquerda é igual a coluna da direita em tamanho*/
+    min-height: 34rem;
+}
+
+.group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction:column; /*Isso daqui vai fazer com que o "justify-content" seja vertical e o "align-items" seja horizontal  */
+    background-color: #ffffff;
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid lightgray;
+}
+
+
+/* Utilizando seletor de CSS para estilizar a coluna da direita.*/
+.group:nth-child(1) {
+    height: 25rem;
+    /* margin-bottom: 10px; */
+}
+
+.instagram-logo {
+    height: 3rem;
+}
+
+.profile-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden; /*Isso faz com que a imagem não exceda o limite da div. Neste caso, como fizemos "border-radius", toda a margem quadrada vai sumir.*/
+}
+
+.profile-photo img {
+    height: 6rem;
 }
